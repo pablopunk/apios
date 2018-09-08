@@ -5,7 +5,7 @@ require('dotenv').config()
 const { env } = process
 let db
 
-// Utils
+// Functions
 const getAuthenticatedMongoUrl = (url, { user, pass }) => {
   const protocol = 'mongodb://'
   const urlWithoutProtocol = url.replace(protocol, '')

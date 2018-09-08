@@ -46,6 +46,7 @@
     "lint": "standard",
     "test": "npm run lint",
     "start": "micro",
-    "dev": "micro-dev"
+    "dev": "micro-dev",
+    "deploy": "now --dotenv"
   }
 }
