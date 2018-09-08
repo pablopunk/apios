@@ -6,6 +6,11 @@ const { env } = process
 let db
 
 // Functions
+const convertAllCollectionsToNamesArray = (collections) => {
+  collections.shift()
+
+  return collections.map(c => c.name)
+}
 const getDatabaseNameFromUrl = (url) => {
   const parts = url.split('/')
 
@@ -40,7 +45,8 @@ module.exports = async (req, res) => {
   let results
 
   if (!resource) {
-    results = await getAllCollectionsFromDb(db)
+    const collections = await getAllCollectionsFromDb(db)
+    results = convertAllCollectionsToNamesArray(collections)
   } else {
     results = await getResourceFromDb(resource, db)
   }
