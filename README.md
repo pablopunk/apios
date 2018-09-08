@@ -17,7 +17,7 @@
 
 ## Usage
 
-First, clone this repo:
+First, clone this repo ([or use now.sh](#deploy))
 
 ```bash
 $ git clone https://github.com/pablopunk/apios
