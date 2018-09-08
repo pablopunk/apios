@@ -47,6 +47,14 @@ If you want to retrieve an specific collection, use the name of the collection a
 >More coming soon...
 
 
+## Deploy
+
+I personally use [now.sh](http://now.sh) to deploy this as it's super easy, fast and secure. You can even run your own instance right now even without cloning the repo:
+
+```bash
+$ now pablopunk/apios -e DB_URL=mongodb://.../dbName -e DB_USER=you DB_PASS=1234
+```
+
 ## License
 
 MIT
