@@ -44,7 +44,7 @@ $ npm start
 
 Now go to http://localhost:3000 and you'll see a list of your database collections.
 
-If you want to retrieve an specific collection, use the name of the collection after the URL: `http://localhost:3000/animals`
+If you want to retrieve an specific collection, use the name of the collection after the URL: http://localhost:3000/animals
 
 >More coming soon...
 
