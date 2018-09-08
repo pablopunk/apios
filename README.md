@@ -4,7 +4,7 @@
   <a href="https://travis-ci.org/pablopunk/apios"><img src="https://img.shields.io/travis/pablopunk/apios.svg" /> </a>
   <a href="https://github.com/pablopunk/miny"><img src="https://img.shields.io/badge/made_with-miny-1eced8.svg" /> </a>
 </p>
- 
+
 <p align="center">
   <i>Automatic API for mongo</i>
 </p>
@@ -27,10 +27,9 @@ $ npm install
 
 Then enter the paramenters of your database inside a `.env` file:
 
-```
+```sh
 # .env
 DB_URL=mongodb://my-url.com:1234/db-name
-DB_NAME=db-name
 DB_USER=pablo
 DB_PASS=pass42
 ```
@@ -46,6 +45,7 @@ Now go to http://localhost:3000 and you'll see a list of your database collectio
 If you want to retrieve an specific collection, use the name of the collection after the URL: http://localhost:3000/animals
 
 >More coming soon...
+
 
 ## License
 
