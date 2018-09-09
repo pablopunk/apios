@@ -5,7 +5,7 @@ require('dotenv').config()
 const { env } = process
 let db
 
-// Functions
+// DB Utils
 const convertAllCollectionsToNamesArray = (collections) => {
   collections.shift()
 
@@ -31,6 +31,20 @@ const getResourceFromDb = async (resource, db) => {
 }
 const getAllCollectionsFromDb = async (db) => db.listCollections().toArray()
 
+// Server utils
+const headers = {
+  'Access-Control-Allow-Origin': '*',
+  'Access-Control-Allow-Headers': 'Accept-Laguage, User-Agent'
+}
+const setResponseHeaders = (headers, res) => {
+  for (const h in headers) {
+    if (Object.prototype.hasOwnProperty.call(headers, h)) {
+      res.setHeader(h, headers[h])
+    }
+  }
+  return res
+}
+
 module.exports = async (req, res) => {
   if (!db) {
     const url = getAuthenticatedMongoUrl(env.DB_URL, { user: env.DB_USER, pass: env.DB_PASS })
@@ -40,6 +54,7 @@ module.exports = async (req, res) => {
     db = client.db(dbName)
   }
 
+  res = setResponseHeaders(headers, res)
   const { url } = req
   const resource = getResourceFromUrl(url)
   let results
