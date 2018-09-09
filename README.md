@@ -14,6 +14,10 @@
 
 *Apios* is a web server that automatically exposes an API for a mongodb database. *If you have a database, you have an API*.
 
+<p align="center">
+  <img src="https://github.com/pablopunk/art/raw/master/apios/apios.png" alt="apios-explanation" />
+</p>
+
 
 ## Usage
 
