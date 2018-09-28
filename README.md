@@ -59,6 +59,12 @@ I personally use [now.sh](http://now.sh) to deploy this as it's super easy, fast
 $ now pablopunk/apios -e DB_URL=mongodb://.../dbName -e DB_USER=you -e DB_PASS=1234
 ```
 
+
+## Related
+
+* *WIP*. Rust implementation of this repo: [rust-apios](https://github.com/pablopunk/rust-apios)
+
+
 ## License
 
 MIT
