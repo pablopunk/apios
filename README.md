@@ -5,7 +5,9 @@
   <a href="https://github.com/pablopunk/miny"><img src="https://img.shields.io/badge/made_with-miny-1eced8.svg" /> </a>
 </p>
 
-![header](https://github.com/pablopunk/art/raw/master/apios/apios-page.png)
+<p align="center">
+  <img src="https://github.com/pablopunk/art/raw/master/apios/apios-page.png" alt="Header" />
+</p>
 
 
 ## Introduction
@@ -13,7 +15,7 @@
 *Apios* is a web server that automatically exposes an API for a mongodb database. *If you have a database, you have an API*.
 
 <p align="center">
-  <img src="https://github.com/pablopunk/art/raw/master/apios/apios.png" alt="apios-explanation" />
+  <img src="https://github.com/pablopunk/art/raw/master/apios/apios.png" alt="Schema" />
 </p>
 
 
